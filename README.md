@@ -17,4 +17,4 @@ The data transformation and cleaning steps to produce the HAR.txt are described 
    (2) Removing the duplicated words 'Body'
    
 7. Group the data set by columnes of activity and subject, and calculate the mean in each group.
-8. Export the csv file.
+8. Export the txt file.
