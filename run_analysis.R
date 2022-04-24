@@ -29,4 +29,4 @@ for (i in 1:length(colnames(df))){
 df_group <- aggregate(x = df, by = list(df$activity, df$subject), FUN = "mean")
 colnames(df_group)[1:2] = colnames(df_group)[3:4]
 df_group <- df_group[-c(3:4)]
-write.csv(df_group,".\\HAR.csv", row.names = FALSE)
+write.csv(df_group,".\\HAR.txt", row.names = FALSE)
