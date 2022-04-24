@@ -1,11 +1,14 @@
-
-The variables of transformed data set in HAR.txt are described as below:
-
 The data comes from experiments carried out with 30 volunteers between 19-48 years old. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) while wearing a smartphone (Samsung Galaxy S II) on the waist. Using the embedded sensor signals (accelerometer and gyroscope) on smartphone, the time domain signals of 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz.
 
-A Fast Fourier Transform (FFT) was applied to some of the time domain signals and prefix 'f' to those new variables to indicate frequency domain signals. 
+**Each column of data are illustrated as below:
 
-In the column names, 'mean' and 'std' indicate measurements of mean and standard deviations repectively, and '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+**activity**: 6 types of activities performing
+**subject**: 30 participants in the experiments denoted by number 1-30
 
+From column 3 to column 88, these are measurements of mean and standard deviation of time domain signals collected by the embedded sensor signals (accelerometer and gyroscope) on smartphone. These signals were ecaptured at a constant rate of 50Hz. 
 
+A Fast Fourier Transform (FFT) was applied to some of the time domain signals, thus some column names are prefixed 'f' to indicate frequency domain signals. In the column names, 'mean' and 'std' indicate measurements of mean and standard deviations repectively, and '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+These columns include:
+**BodyAcc-mean()-X	BodyAcc-mean()-Y	BodyAcc-mean()-Z	BodyAcc-std()-X	BodyAcc-std()-Y	BodyAcc-std()-Z	GravityAcc-mean()-X	GravityAcc-mean()-Y	GravityAcc-mean()-Z	GravityAcc-std()-X	GravityAcc-std()-Y	GravityAcc-std()-Z	BodyAccJerk-mean()-X	BodyAccJerk-mean()-Y	BodyAccJerk-mean()-Z	BodyAccJerk-std()-X	BodyAccJerk-std()-Y	BodyAccJerk-std()-Z	BodyGyro-mean()-X	BodyGyro-mean()-Y	BodyGyro-mean()-Z	BodyGyro-std()-X	BodyGyro-std()-Y	BodyGyro-std()-Z	BodyGyroJerk-mean()-X	BodyGyroJerk-mean()-Y	BodyGyroJerk-mean()-Z	BodyGyroJerk-std()-X	BodyGyroJerk-std()-Y	BodyGyroJerk-std()-Z	BodyAccMag-mean()	BodyAccMag-std()	GravityAccMag-mean()	GravityAccMag-std()	BodyAccJerkMag-mean()	BodyAccJerkMag-std()	BodyGyroMag-mean()	BodyGyroMag-std()	BodyGyroJerkMag-mean()	BodyGyroJerkMag-std()	fBodyAcc-mean()-X	fBodyAcc-mean()-Y	fBodyAcc-mean()-Z	fBodyAcc-std()-X	fBodyAcc-std()-Y	fBodyAcc-std()-Z	fBodyAcc-meanFreq()-X	fBodyAcc-meanFreq()-Y	fBodyAcc-meanFreq()-Z	fBodyAccJerk-mean()-X	fBodyAccJerk-mean()-Y	fBodyAccJerk-mean()-Z	fBodyAccJerk-std()-X	fBodyAccJerk-std()-Y	fBodyAccJerk-std()-Z	fBodyAccJerk-meanFreq()-X	fBodyAccJerk-meanFreq()-Y	fBodyAccJerk-meanFreq()-Z	fBodyGyro-mean()-X	fBodyGyro-mean()-Y	fBodyGyro-mean()-Z	fBodyGyro-std()-X	fBodyGyro-std()-Y	fBodyGyro-std()-Z	fBodyGyro-meanFreq()-X	fBodyGyro-meanFreq()-Y	fBodyGyro-meanFreq()-Z	fBodyAccMag-mean()	fBodyAccMag-std()	fBodyAccMag-meanFreq()	fBodyAccJerkMag-mean()	fBodyAccJerkMag-std()	fBodyAccJerkMag-meanFreq()	fBodyGyroMag-mean()	fBodyGyroMag-std()	fBodyGyroMag-meanFreq()	fBodyGyroJerkMag-mean()	fBodyGyroJerkMag-std()	fBodyGyroJerkMag-meanFreq()	angle(tBodyAccMean,gravity)	angle(tBodyAccJerkMean),gravityMean)	angle(tBodyGyroMean,gravityMean)	angle(tBodyGyroJerkMean,gravityMean)	angle(X,gravityMean)	angle(Y,gravityMean)	angle(Z,gravityMean)
 
